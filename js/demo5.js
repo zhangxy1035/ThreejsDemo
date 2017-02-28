@@ -19,7 +19,7 @@ function init() {
     light.position.set(10, 15, 5);
     scene.add(light);
 
-    var material = new THREE.MeshLambertMaterial({
+    var material = new THREE.MeshNormalMaterial({
         color: 0xffff00,
         //emissive: 0xff0000
     });
