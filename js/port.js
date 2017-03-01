@@ -24,7 +24,13 @@ function init() {
     loader.load('../resource/port.obj', function(obj) {
         obj.traverse(function(child) {
             if (child instanceof THREE.Mesh) {
-                child.material.side = THREE.DoubleSide;
+                //添加材质
+//                child.material = new THREE.MeshLambertMaterial({
+//                    color: 0xffff00,
+//                    side: THREE.DoubleSide
+//                });
+                //双面渲染
+//                child.material.side = THREE.DoubleSide;
             }
         });
 
